@@ -1,5 +1,4 @@
 window.onload = function() {
-    console.log('DOM stworzony');
 
     var url = 'http://api.icndb.com/jokes/random';
 
