@@ -1,6 +1,6 @@
 window.onload = function() {
 
-    var url = 'http://api.icndb.com/jokes/random';
+    var url = 'https://api.icndb.com/jokes/random'; //zmieniłem na https
 
     var button = document.getElementById('get-joke');
     button.addEventListener('click', function() {
