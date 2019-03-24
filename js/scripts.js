@@ -1,6 +1,6 @@
 window.onload = function() {
 
-    var url = 'https://api.icndb.com/jokes/random'; //zmieniłem na https
+   // var url = 'https://api.icndb.com/jokes/random'; //zmieniłem na https
 
     var button = document.getElementById('get-joke');
     button.addEventListener('click', function() {
@@ -14,12 +14,13 @@ window.onload = function() {
 
     function getJoke() {
         var xhr = new XMLHttpRequest();
-        xhr.open('GET', url);
+        xhr.open('GET', 'https://api.icndb.com/jokes/random');
         xhr.addEventListener('load', function() {
             var response = JSON.parse(xhr.response);
             paragraph.innerHTML = response.value.joke;
         });
         xhr.send();
     }
+	
 
 }
